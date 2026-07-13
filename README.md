@@ -1,8 +1,6 @@
 # 🏛️ Spirit of Ankh
 ### Smart Tourism Management System with Real-Time AI Insights
 
-![Egypt Tourism](frontend/images/hero_egypt.png)
-
 ---
 
 ## 📖 Overview
