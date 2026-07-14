@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
   
   <!-- Style Sheet -->
-  <link rel="stylesheet" href="styles.css?v=2.0">
+  <link rel="stylesheet" href="styles.css?v=3.0">
 </head>
 <body>
 
@@ -498,6 +498,20 @@
     </div>
   </div>
 
+  <!-- Chatbot Toast Popup Container -->
+  <div id="chatbot-toast" class="chatbot-toast glass-panel hidden">
+    <div class="chatbot-toast-header">
+      <div class="chatbot-toast-icon-wrap">
+        <span style="font-size: 1rem;">✨</span>
+        <span class="chatbot-toast-icon">Ankh AI Guide</span>
+      </div>
+      <button class="chatbot-toast-close" onclick="closeChatbotToast()">&times;</button>
+    </div>
+    <div id="chatbot-toast-message" class="chatbot-toast-message">
+      Loading crowd analysis...
+    </div>
+  </div>
+
   <!-- Leaflet JS -->
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
   
@@ -531,9 +545,11 @@
   <script src="js/predictions.js?v=3.0"></script>
   <script src="js/telemetry.js?v=3.0"></script>
   <script src="js/weather.js?v=3.0"></script>
+  <script src="js/chatbot.js?v=3.0"></script>
 
   <!-- 5. Init: loaded LAST — bootstraps the whole app -->
   <script src="js/init.js?v=3.0"></script>
 
 </body>
 </html>
+

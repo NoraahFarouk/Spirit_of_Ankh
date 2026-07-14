@@ -198,6 +198,11 @@ window.openDetails = function(id) {
     targetLng += 0.25; // ~210px offset at zoom 10 in Egypt
   }
   map.flyTo([attraction.coordinates[0], targetLng], 10);
+
+  // Trigger the AI Chatbot helper to check crowd levels and show suggestions
+  if (typeof checkIfCrowded === "function") {
+    checkIfCrowded(attraction.name);
+  }
 };
 
 // ── Close Detail Drawer ───────────────────────────────────────────────────────
